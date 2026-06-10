@@ -1,0 +1,155 @@
+/* Admin Styles for COURTIQ CTQ Dashboard */
+
+.ctq-admin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ctq-admin-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.ctq-admin-header {
+  margin-bottom: 32px;
+}
+
+.ctq-admin-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 8px 0;
+}
+
+.ctq-admin-subheader {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.ctq-admin-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.ctq-admin-stat-box {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.ctq-admin-stat-number {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1d4ed8;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.ctq-admin-stat-label {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.ctq-admin-notice {
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  color: #92400e;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ctq-admin-notice.error {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #7f1d1d;
+}
+
+.ctq-admin-notice.success {
+  background: #dcfce7;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.ctq-admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.ctq-admin-table th {
+  background: #f8fafc;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #e2e8f0;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.ctq-admin-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+}
+
+.ctq-admin-button {
+  background: #1e3d89;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 150ms ease;
+}
+
+.ctq-admin-button:hover {
+  background: #152a5e;
+}
+
+.ctq-admin-button.secondary {
+  background: #e2e8f0;
+  color: #1a1a2e;
+}
+
+.ctq-admin-button.secondary:hover {
+  background: #cbd5e1;
+}
+
+.ctq-admin-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 24px 0;
+}
+
+@media (max-width: 640px) {
+  .ctq-admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .ctq-admin-stat-number {
+    font-size: 28px;
+  }
+
+  .ctq-admin-table {
+    font-size: 12px;
+  }
+
+  .ctq-admin-table th,
+  .ctq-admin-table td {
+    padding: 8px;
+  }
+}
