@@ -1,0 +1,39 @@
+# Project ID: COURTIQ Translator v34.1
+# Translation files for multilingual WordPress plugin
+
+msgid ""
+msgstr ""
+"Project-Id-Version: COURTIQ Translator Pro 34.1\n"
+"POT-Creation-Date: 2026-06-10\n"
+"PO-Revision-Date: 2026-06-10\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Paramètres"
+msgstr "Paramètres"
+
+msgid "Support"
+msgstr "Support"
+
+msgid "Cache vidé."
+msgstr "Cache vidé."
+
+msgid "CTQ Traduction"
+msgstr "CTQ Traduction"
+
+msgid "🌐 CTQ"
+msgstr "🌐 CTQ"
+
+msgid "Toutes les langues"
+msgstr "Toutes les langues"
+
+msgid "COURTIQ Language Switcher"
+msgstr "Sélecteur de langue COURTIQ"
+
+msgid "Sélecteur de langue multilingue"
+msgstr "Sélecteur de langue multilingue"
+
+msgid "Langues"
+msgstr "Langues"
