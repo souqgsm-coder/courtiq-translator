@@ -1,0 +1,535 @@
+<!-- COURTIQ Translator — Premium Topbar v3.0 -->
+<div class="ctq-premium-bar" id="ctqPremiumBar">
+  <div class="ctq-socials-premium">
+    <a href="https://facebook.com" target="_blank" rel="noopener" class="ctq-social-btn" data-social="facebook" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+      </svg>
+      <span class="ctq-tooltip">Facebook</span>
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noopener" class="ctq-social-btn" data-social="instagram" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+      </svg>
+      <span class="ctq-tooltip">Instagram</span>
+    </a>
+    <a href="https://tiktok.com" target="_blank" rel="noopener" class="ctq-social-btn" data-social="tiktok" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.35 6.35 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
+      </svg>
+      <span class="ctq-tooltip">TikTok</span>
+    </a>
+  </div>
+  <div class="ctq-lang-container" id="ctqLangContainer">
+    <div class="ctq-status-dot" id="ctqStatusDot"></div>
+    <button class="ctq-lang-trigger" id="ctqLangTrigger" aria-haspopup="listbox" aria-expanded="false" aria-label="Changer de langue" type="button">
+      <span class="ctq-flag-container">
+        <img src="https://flagcdn.com/w40/fr.png" alt="Français" id="ctqCurrentFlag" class="ctq-flag-img" width="22" height="22" loading="lazy">
+        <span class="ctq-flag-ring"></span>
+      </span>
+      <span class="ctq-lang-label" id="ctqLangLabel">FR</span>
+      <svg class="ctq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="12" height="12" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </button>
+    <div class="ctq-dropdown-panel" id="ctqDropdownPanel" role="listbox" aria-hidden="true">
+      <div class="ctq-dropdown-inner">
+        <div class="ctq-lang-list" id="ctqLangList">
+          <button class="ctq-lang-option is-active" role="option" data-lang="fr" aria-selected="true" tabindex="0" type="button">
+            <span class="ctq-opt-flag-wrap">
+              <img src="https://flagcdn.com/w40/fr.png" alt="Français" width="22" height="22" loading="lazy">
+            </span>
+            <span class="ctq-opt-text">
+              <span class="ctq-opt-name">Français</span>
+              <span class="ctq-opt-native">Langue par défaut</span>
+            </span>
+            <svg class="ctq-opt-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="16" height="16">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </button>
+          <button class="ctq-lang-option" role="option" data-lang="en" aria-selected="false" tabindex="-1" type="button">
+            <span class="ctq-opt-flag-wrap">
+              <img src="https://flagcdn.com/w40/gb.png" alt="English" width="22" height="22" loading="lazy">
+            </span>
+            <span class="ctq-opt-text">
+              <span class="ctq-opt-name">English</span>
+              <span class="ctq-opt-native">Anglais</span>
+            </span>
+            <svg class="ctq-opt-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="16" height="16">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </button>
+          <button class="ctq-lang-option" role="option" data-lang="ar" aria-selected="false" tabindex="-1" type="button">
+            <span class="ctq-opt-flag-wrap">
+              <img src="https://flagcdn.com/w40/dz.png" alt="العربية" width="22" height="22" loading="lazy">
+            </span>
+            <span class="ctq-opt-text ctq-rtl-text">
+              <span class="ctq-opt-name">العربية</span>
+              <span class="ctq-opt-native">Arabe</span>
+            </span>
+            <svg class="ctq-opt-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="16" height="16">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+:root {
+  --ctq-accent: #1e3d89;
+  --ctq-accent-hover: #152a5e;
+  --ctq-accent-light: #e8edf7;
+  --ctq-orange: #ff8c31;
+  --ctq-border-solid: #e2e8f0;
+  --ctq-text-primary: #1a1a2e;
+  --ctq-text-muted: #94a3b8;
+}
+
+.ctq-premium-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 48px;
+  padding: 0 8px;
+  gap: 12px;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: transparent;
+  z-index: 9999;
+  position: relative;
+}
+
+.ctq-socials-premium {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ctq-social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  color: var(--ctq-text-muted);
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: all 150ms ease-out;
+  position: relative;
+}
+
+.ctq-social-btn svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ctq-social-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+  }
+  .ctq-social-btn[data-social="facebook"]:hover { color: #1877F2; background: rgba(24, 119, 242, 0.1); }
+  .ctq-social-btn[data-social="instagram"]:hover { color: #E4405F; background: rgba(228, 64, 95, 0.1); }
+  .ctq-social-btn[data-social="tiktok"]:hover { color: #000; background: rgba(0, 0, 0, 0.08); }
+}
+
+.ctq-tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: var(--ctq-text-primary);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 150ms ease-out;
+  pointer-events: none;
+}
+
+@media (hover: hover) {
+  .ctq-social-btn:hover .ctq-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.ctq-lang-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 4px;
+  padding-left: 8px;
+  border-left: 1px solid var(--ctq-border-solid);
+}
+
+.ctq-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
+  animation: ctq-pulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes ctq-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.ctq-lang-trigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px 6px 6px;
+  min-height: 44px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--ctq-border-solid);
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  outline: none;
+  font-family: inherit;
+  transition: all 150ms ease-out;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) {
+  .ctq-lang-trigger:hover {
+    background: white;
+    border-color: var(--ctq-accent);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+  }
+}
+
+.ctq-lang-trigger[aria-expanded="true"] {
+  background: var(--ctq-accent-light);
+  border-color: var(--ctq-accent);
+}
+
+.ctq-flag-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.ctq-flag-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.ctq-flag-ring {
+  position: absolute;
+  inset: -2px;
+  border: 1.5px solid transparent;
+  border-radius: 50%;
+  transition: border-color 150ms;
+}
+
+.ctq-lang-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: var(--ctq-text-primary);
+}
+
+.ctq-chevron {
+  color: var(--ctq-text-muted);
+  transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+
+.ctq-lang-trigger[aria-expanded="true"] .ctq-chevron {
+  transform: rotate(180deg);
+  color: var(--ctq-accent);
+}
+
+.ctq-dropdown-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 220px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--ctq-border-solid);
+  border-radius: 14px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.95) translateY(-8px);
+  transition: all 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 10000;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ctq-dropdown-panel.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translateY(0);
+  pointer-events: auto;
+}
+
+.ctq-dropdown-inner {
+  padding: 6px;
+}
+
+.ctq-lang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ctq-lang-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 10px;
+  min-height: 44px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  font-family: inherit;
+  transition: background 150ms;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) {
+  .ctq-lang-option:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.ctq-lang-option.is-active {
+  background: var(--ctq-accent-light);
+}
+
+.ctq-opt-flag-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ctq-border-solid);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.ctq-opt-flag-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ctq-opt-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.ctq-opt-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ctq-text-primary);
+}
+
+.ctq-opt-native {
+  font-size: 12px;
+  color: var(--ctq-text-muted);
+}
+
+.ctq-opt-check {
+  width: 18px;
+  height: 18px;
+  color: var(--ctq-accent);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 150ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  flex-shrink: 0;
+}
+
+.ctq-lang-option.is-active .ctq-opt-check {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[dir="rtl"] .ctq-lang-option {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+[dir="rtl"] .ctq-lang-container {
+  margin-left: 0;
+  margin-right: 4px;
+  padding-left: 0;
+  padding-right: 8px;
+  border-left: none;
+  border-right: 1px solid var(--ctq-border-solid);
+}
+
+[dir="rtl"] .ctq-dropdown-panel {
+  right: auto;
+  left: 0;
+}
+
+@media (max-width: 640px) {
+  .ctq-premium-bar {
+    min-height: 52px;
+    padding: 0 4px;
+  }
+
+  .ctq-social-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .ctq-social-btn[data-social="linkedin"],
+  .ctq-social-btn[data-social="youtube"] {
+    display: none;
+  }
+}
+</style>
+
+<script>
+(function() {
+  'use strict';
+
+  const LANG_META = {
+    fr: { code: 'FR', flag: 'https://flagcdn.com/w40/fr.png', dir: 'ltr' },
+    en: { code: 'EN', flag: 'https://flagcdn.com/w40/gb.png', dir: 'ltr' },
+    ar: { code: 'AR', flag: 'https://flagcdn.com/w40/dz.png', dir: 'rtl' }
+  };
+
+  let currentLang = localStorage.getItem('courtiq_pref_lang') || 'fr';
+  let isDropdownOpen = false;
+
+  const container = document.getElementById('ctqLangContainer');
+  const trigger = document.getElementById('ctqLangTrigger');
+  const panel = document.getElementById('ctqDropdownPanel');
+  const flagImg = document.getElementById('ctqCurrentFlag');
+  const langLabel = document.getElementById('ctqLangLabel');
+  const langList = document.getElementById('ctqLangList');
+
+  function init() {
+    updateUI(currentLang);
+    bindEvents();
+  }
+
+  function updateUI(lang) {
+    const meta = LANG_META[lang] || LANG_META.fr;
+    if (flagImg) { flagImg.src = meta.flag; }
+    if (langLabel) { langLabel.textContent = meta.code; }
+
+    document.querySelectorAll('.ctq-lang-option').forEach(opt => {
+      opt.classList.toggle('is-active', opt.dataset.lang === lang);
+      opt.setAttribute('aria-selected', opt.dataset.lang === lang);
+    });
+
+    document.documentElement.lang = lang;
+    document.documentElement.dir = meta.dir;
+    localStorage.setItem('courtiq_pref_lang', lang);
+    currentLang = lang;
+  }
+
+  function bindEvents() {
+    trigger?.addEventListener('click', function(e) {
+      e.stopPropagation();
+      toggleDropdown();
+    });
+
+    langList?.addEventListener('click', function(e) {
+      const option = e.target.closest('.ctq-lang-option');
+      if (option) {
+        const lang = option.dataset.lang;
+        if (lang && lang !== currentLang) {
+          selectLanguage(lang);
+        }
+        closeDropdown();
+      }
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!container?.contains(e.target)) {
+        closeDropdown();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && isDropdownOpen) {
+        closeDropdown();
+        trigger?.focus();
+      }
+    });
+  }
+
+  function toggleDropdown() {
+    isDropdownOpen ? closeDropdown() : openDropdown();
+  }
+
+  function openDropdown() {
+    isDropdownOpen = true;
+    panel?.classList.add('is-open');
+    trigger?.setAttribute('aria-expanded', 'true');
+    panel?.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeDropdown() {
+    isDropdownOpen = false;
+    panel?.classList.remove('is-open');
+    trigger?.setAttribute('aria-expanded', 'false');
+    panel?.setAttribute('aria-hidden', 'true');
+  }
+
+  function selectLanguage(lang) {
+    updateUI(lang);
+    if (lang === 'fr') {
+      window.location.reload();
+    } else {
+      if (typeof window.ctqEngine !== 'undefined') {
+        window.ctqEngine.translate(lang);
+      } else {
+        window.location.reload();
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
