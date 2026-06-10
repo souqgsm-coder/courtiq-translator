@@ -1,0 +1,41 @@
+/* RTL Support for Arabic */
+[dir="rtl"] body,
+.ctq-rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .ctq-premium-bar {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .ctq-lang-container {
+  margin-left: 0;
+  margin-right: 4px;
+  padding-left: 0;
+  padding-right: 8px;
+  border-left: none;
+  border-right: 1px solid var(--ctq-border-solid);
+}
+
+[dir="rtl"] .ctq-opt-text {
+  font-family: 'Cairo', 'Tajawal', 'Noto Sans Arabic', sans-serif;
+}
+
+[dir="rtl"] .ctq-opt-name {
+  font-family: 'Cairo', 'Tajawal', 'Noto Sans Arabic', sans-serif;
+}
+
+[dir="rtl"] .ctq-socials-premium {
+  order: 2;
+}
+
+[dir="rtl"] .ctq-lang-container {
+  order: 1;
+}
+
+[dir="rtl"] .ctq-dropdown-panel {
+  right: auto;
+  left: 0;
+  transform-origin: top left;
+}
